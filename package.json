@@ -13,5 +13,8 @@
   "scripts": {
     "start": "backpack",
     "build": "backpack build"
+  },
+  "engines": {
+    "node": "9.5.0"
   }
 }
