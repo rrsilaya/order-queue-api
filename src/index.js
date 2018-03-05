@@ -10,7 +10,8 @@ app.use(logger('dev'))
    .use(bodyParser.json())
    .use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/api', router);
+app.use('/docs', express.static(__dirname + '/../docs'))
+   .use('/api', router);
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => {

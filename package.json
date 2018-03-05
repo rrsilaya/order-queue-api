@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "apidoc": "^0.17.6",
     "backpack-core": "^0.5.0",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
@@ -11,8 +12,9 @@
     "morgan": "^1.9.0"
   },
   "scripts": {
-    "start": "backpack",
-    "build": "backpack build"
+    "start": "yarn docs && backpack",
+    "build": "yarn docs && backpack build",
+    "docs": "apidoc -i ./src -o ./docs"
   },
   "engines": {
     "node": "9.5.0"
