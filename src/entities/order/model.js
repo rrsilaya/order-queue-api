@@ -11,7 +11,7 @@ const orderSchema = new Schema({
   order: {
     type: String,
     required: [ true, 'Missing order' ]
-  }
+  },
 
   isProcessed: {
     type: Boolean,
